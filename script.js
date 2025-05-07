@@ -11,7 +11,7 @@ function appointments(name, date, number) {
     this.number = number;
 
     this.display = function() {
-        return ` ---- ${this.name} ---- ${this.age} ---- ${this.email} `;
+        return ` ---- ${this.name} ---- ${this.date} ---- ${this.number} `;
     }
 }
 
@@ -25,7 +25,7 @@ book.onclick = function() {
     if(name == "" || date == "" || number == "") {
         message.innerHTML= "Please complete all fields before booking"
     } else {
-        let appointments = new Appointment(name.value, age.value. email.value);
+        let appointments = new Appointment(name.value, date.value. number.value);
         appointments.push(appointments)
         totalQueue.innerText =;
     }
